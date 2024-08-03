@@ -8,7 +8,7 @@ admin_client = KafkaAdminClient(
 
 # 생성할 새로운 토픽 설정
 topic_list = []
-topic_list.append(NewTopic(name="my_new_topic", num_partitions=1, replication_factor=1))
+topic_list.append(NewTopic(name="my_new_topic", num_partitions=9, replication_factor=2))
 
 # 토픽 생성
 admin_client.create_topics(new_topics=topic_list, validate_only=False)

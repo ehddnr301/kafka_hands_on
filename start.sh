@@ -13,6 +13,5 @@ kubectl apply -f producer.yaml
 sleep 20
 
 kubectl apply -f consumer.yaml
-sleep 20
 
 kubectl apply -f kafka_ui.yaml
